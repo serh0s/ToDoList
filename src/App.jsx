@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import TodoForm from './components/TodoForm/TodoForm';
 import TodosList from './components/TodoList/TodoList';
+import RocketImg from './assets/rocket.svg';
 import './style.css';
 
 export default function App() {
@@ -57,7 +58,7 @@ export default function App() {
     return (
         <>
             <header className="c-header">
-                <img className="c-header__logo" src="./assets/rocket.svg" />
+                <img className="c-header__logo" src={RocketImg} />
                 <span className="c-header__title">
                     to<span>do</span>
                 </span>
