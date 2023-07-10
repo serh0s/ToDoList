@@ -1,0 +1,53 @@
+.c-task {
+    display: grid;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    margin: -5px;
+    padding: 5px;
+}
+
+.c-task textarea,
+.c-task::after {
+    min-width: 1em;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    font: inherit;
+    overflow: hidden;
+}
+
+.c-task--editing {
+    border-color: var(--blue-dark);
+}
+
+.c-task--editing::after {
+    content: attr(data-value) " ";
+    visibility: hidden;
+    white-space: pre-wrap;
+}
+
+.c-task__textarea {
+    background-color: transparent;
+    font-size: inherit;
+    font-family: inherit;
+    resize: none;
+    outline: transparent;
+    border: none;
+    color: var(--gray-100);
+}
+
+.c-task__title {
+    grid-column: 1 / 3;
+    grid-row: 1/2;
+    transition: color var(--transition);
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+
+.c-list__item--expanded .c-task__title {
+    display: block;
+}

@@ -1,0 +1,42 @@
+.c-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    overflow: auto;
+    padding-bottom: 12px;
+}
+
+.c-list::-webkit-scrollbar {
+    width: 10px;
+}
+
+.c-list::-webkit-scrollbar-thumb {
+    background-color: var(--blue);
+    border-left: 4px solid var(--gray-600);
+    border-right: 4px solid var(--gray-600);
+}
+.c-list::-webkit-scrollbar-track {
+    background-color: var(--blue-dark);
+    border-left: 4px solid var(--gray-600);
+    border-right: 4px solid var(--gray-600);
+}
+
+.c-list--empty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-block: 50px;
+    color: var(--gray-300);
+    border: none;
+    border-top: 2px solid var(--gray-400);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.c-list--empty svg {
+    width: 56px;
+    height: 64px;
+    margin-bottom: 16px;
+    color: var(--gray-400);
+}
+
