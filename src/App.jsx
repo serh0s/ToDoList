@@ -57,7 +57,7 @@ export default function App() {
     return (
         <>
             <header className="c-header">
-                <img className="c-header__logo" src="./src/assets/rocket.svg" />
+                <img className="c-header__logo" src="./assets/rocket.svg" />
                 <span className="c-header__title">
                     to<span>do</span>
                 </span>

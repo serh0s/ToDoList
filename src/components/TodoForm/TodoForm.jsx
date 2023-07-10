@@ -27,7 +27,7 @@ const TodoForm = ({ onSubmit }) => {
 
             <button className="f-btn" type="submit">
                 Add
-                <img src="./src/assets/plus.svg" alt="" />
+                <img src="../../assets/plus.svg" alt="" />
             </button>
         </form>
     );
